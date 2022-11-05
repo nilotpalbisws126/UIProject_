@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_menu" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Artificial Insemination in Pig"
+            android:textColor="#0D1333"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggle" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="TextView"
+            android:textColor="#61688b"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/search_bg"
+            android:drawableLeft="@drawable/ic_search"
+            android:ems="10"
+            android:fontFamily="@font/nunito"
+            android:hint="Search for topic"
+            android:inputType="textPersonName"
+            android:paddingStart="16dp"
+            android:singleLine="true"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Topics"
+            android:textColor="#001333"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/items_recycler"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="#6E8AFA"
+            app:layout_constraintBottom_toBottomOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/items_recycler"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+
+            app:layout_constraintBottom_toTopOf="@id/scroll_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/scroll_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/items_recycler"
+            app:layout_constraintVertical_bias="1.0">
+
+            <ImageView
+                android:id="@+id/scroll"
+                android:layout_width="97dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="143dp"
+                android:layout_marginEnd="160dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/iconmenu"
+        app:headerLayout="@layout/nav_header"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start|left">
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

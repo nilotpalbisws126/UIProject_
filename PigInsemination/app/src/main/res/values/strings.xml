@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">pigAI</string>
+    <string name="home">Home</string>
+    <string name="about">About Us</string>
+    <string name="contact">Contact us and developer</string>
+    <string name="about_content"><p align="justify">This app on “Artificial Insemination in Pig’’ is prepared for researchers, academicians, Veterinarians,Paraveterinarinas, farmers, entrepreneurs who are directly or indirectly involved in pig farming. This App has been compiled to provide much information about set up of A.I. laboratory, semen collection, evaluation, processing, semen packing, shipment, performance of A.I., quality control in A.I. and some management aspects. The goal of this app is to share useful practical information on the technology regardless of geographical location, farm herd strength, budget and existing facilities. Country specific regulations, practices and policies need to be considered before applying the app information. It is advised to follow best practices and appropriate standards considering animal welfare, budget and regulations. Authors acknowledge all sources of information from where relevant information are referred and compiled. We welcome valuable suggestions from the users for further improvement of the app. It is always advised for training and capacity building of personals involved in the A.I. in Pig. The app contains the first hand information on the following topics.</p></string>
+    <string name="about_following">
+
+        \n<b>About Artificial Insemination in Pig</b>
+\n\u2022Advantages of Artificial Insemination in Pig
+\n\u2022Set Up of A.I. Lab
+\n\u2022Good Laboratory Hygiene in A.I. Laboratory
+\n\u2022Equipments used in Artificial Insemination in Pig
+\n\u2022Chemicals and consumables
+\n\u2022Cleaning and Sterilization
+\n\u2022SOP for AI
+\n\u2022Training of Boar
+\n\u2022Semen collection
+\n\u2022Semen Fractions
+\n\u2022Basic semen evaluation tests and importance
+\n\u2022Advanced Sperm Function Test
+\n\u2022Semen Processing
+\n\u2022Extenders used for Pig Semen
+\n\u2022Extender Preparation
+\n\u2022Semen Extension
+\n\u2022Semen Filling
+\n\u2022Semen Dose Sealing
+\n\u2022Semen Dose Storage or Preservation
+\n\u2022Semen Dose Transportation
+\n\u2022Heat Detection in Pigs
+\n\u2022Estrus Synchronization in Pigs
+\n\u2022Time of A.I. in Pig
+\n\u2022Performing A.I. in Pig
+\n\u2022Post A.I. Measures
+\n\u2022Care and Management of Pregnant animals
+\n\u2022Care and Management at the time of farrowing
+\n\u2022Neonatal care and Management
+\n\u2022Post Weaning A.I. in sows
+\n\u2022Boar Management
+\n\u2022Record keeping in A.I. program
+\n\u2022Biosecurity measures in A.I. program
+\n\u2022Quality management in A.I. Lab.
+\n\u2022Future challenges for A.I. in Pig
+\n\u2022A.I. dose availability\n\n\n
+        <b>FOR FARMERS</b>
+        \n\u2022About Artificial Insemination in Pig
+\n\u2022Advantages of Artificial Insemination in Pig
+\n\u2022Semen Dose Storage or Preservation
+\n\u2022Semen Dose Transportation
+\n\u2022Heat Detection in Pigs
+\n\u2022Estrus Synchronization in Pigs
+\n\u2022Time of A.I. in Pig
+\n\u2022Performing A.I. in Pig
+\n\u2022Post A.I. Measures
+\n\u2022Care and Management of Pregnant animals
+\n\u2022Care and Management at the time of
+farrowing
+\n\u2022Neonatal care and Management
+\n\u2022Post Weaning A.I. in sows
+\n\u2022Boar Management
+\n\u2022Record keeping in A.I. program\n\n\n\n\n
+
+
+    </string>
+
+    <string name="developer_string">
+<b>ICAR-NRC on Pig (Content Developer)</b>\n
+Dr. Sunil Kumar\n
+Dr. Rafiqul Islam\n
+Dr. S. Banik\n
+Dr. P.J.Das\n
+Dr. K. Barman\n
+Dr. S.R.Pegu\n
+Dr. S. Rajkhowa\n
+        Dr. Manish Kumar (IIT Guwahati)\n
+        Dr. V.K. Gupta\n
+<b>IIT, Guwahati (Application Developer)</b>\n
+Mr. Nilotpal Biswas, Research Scholar\n\n\n\n\n
+</string>
+
+    <string name="contact_us">
+<b>Director</b>\n
+ICAR-National Research Centre on Pig\n
+Rani, Guwahati (Assam)\n
+Email: nrconpig@rediffmail.com\n
+Tele/Fax: 0361 2847195\n\n
+
+<b>Project contact</b>\n
+Email: (pigaiappnrcp@gmail.com)\n\n
+      <b>Important Links</b>  \n
+ICAR, New Delhi (https://icar.org.in)\n
+DAHD, Govt. of India (http://dahd.nic.in)\n
+ICAR-NRC on Pig (http://www.nrcp.in)\n
+ The Pig site (https://thepigsite.com)\n
+National Hog Farmer (https://www.nationalhogfarmer.com)\n
+
+</string>
+    <string name="acknowledgement_text">\nIndian Council of Agricultural Research, New Delhi\n
+Department of Animal Husbandry and Dairying, Govt. of India\n
+North East Centre for Biological and Health Sciences, IIT Guwahati\n
+Director, ICAR-NRC on Pig, Rani\n
+Staff of ICAR-NRC on Pig, Rani\n
+All sources of information \n
+        One and all</string>
+</resources>

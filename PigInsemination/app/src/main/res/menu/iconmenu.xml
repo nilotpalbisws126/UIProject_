@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+
+    <item android:id="@+id/menu_about"
+        android:icon="@drawable/ic_baseline_about_app"
+        android:title="About App"/>
+
+    <item android:id="@+id/menu_contact"
+        android:icon="@drawable/ic_baseline_contact_mail_24"
+        android:title="Contact and Developers"/>
+    <item android:id="@+id/menu_acknowledgement"
+        android:icon="@drawable/ic_baseline_people_24"
+       android:title="Acknowledgement"/>
+
+</menu>

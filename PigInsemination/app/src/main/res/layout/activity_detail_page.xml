@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD6E7FC"
+    tools:context=".DetailPage">
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView5"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="450dp"-->
+    <!--        android:adjustViewBounds="true"-->
+    <!--        android:scaleType="fitXY"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="1.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:srcCompat="@android:drawable/editbox_dropdown_light_frame"-->
+    <!--        tools:layout_editor_absoluteY="-21dp" />-->
+
+    <ImageView
+        android:id="@+id/back_detail_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_left" />
+
+    <ImageView
+        android:id="@+id/menu_detail_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_more_vertical" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.example.piginsemination.ZoomLinearLayout
+            android:id="@+id/zoom_linear_layout_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="32sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginBottom="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_bold"
+                    android:paddingTop="18sp"
+                    android:text="Content Loading....."
+
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:id="@+id/image_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/content_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32sp"
+                    android:layout_marginTop="24sp"
+                    android:layout_marginRight="24sp"
+                    android:fadeScrollbars="true"
+
+                    android:justificationMode="inter_word"
+                    android:scrollbars="vertical"
+                    android:text=""
+
+                    android:textAlignment="viewStart"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+        </com.example.piginsemination.ZoomLinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:background="@drawable/border_container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:paddingBottom="10sp"
+            android:text="Learn More"
+            android:textColor="#0D1333"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/article_recycler"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:paddingBottom="150sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

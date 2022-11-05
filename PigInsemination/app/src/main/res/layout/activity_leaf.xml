@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4EED2"
+    tools:context=".LeafActivity">
+
+
+    <ImageView
+        android:id="@+id/leaf_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_left" />
+
+    <ImageView
+        android:id="@+id/menu_leaf_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_more_vertical" />
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaf_back_button"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.example.piginsemination.ZoomLinearLayout
+            android:id="@+id/zoom_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/leaf_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="32sp"
+                android:layout_marginRight="5sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/leaf_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_bold"
+                    android:paddingTop="18sp"
+                    android:text="Content Loading....."
+
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:id="@+id/leaf_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/leaf_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32sp"
+                    android:layout_marginTop="24sp"
+                    android:layout_marginRight="24sp"
+                    android:fadeScrollbars="true"
+
+                    android:justificationMode="inter_word"
+
+                    android:scrollbars="vertical"
+                    android:text=""
+                    android:textAlignment="viewStart"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/video1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/video2"
+                    android:visibility="gone"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/video2"
+                    android:src="@drawable/video1"
+                    android:adjustViewBounds="true"
+                    android:visibility="gone"
+                   />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/video3"
+                    android:src="@drawable/video3"
+                    android:adjustViewBounds="true"
+                    android:visibility="gone"
+                    />
+
+
+
+
+
+
+
+            </LinearLayout>
+        </com.example.piginsemination.ZoomLinearLayout>
+
+    </ScrollView>
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/leaf_title"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="45dp"-->
+    <!--        android:fontFamily="@font/nunito_bold"-->
+    <!--        android:text="Title"-->
+    <!--        android:textColor="#0D1333"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/leaf_image"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:visibility="visible"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/leaf_title"-->
+    <!--        app:srcCompat="@drawable/business" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/leaf_content"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="24dp"-->
+    <!--        android:layout_marginTop="24dp"-->
+    <!--        android:fontFamily="@font/nunito"-->
+    <!--        android:lineSpacingExtra="5sp"-->
+    <!--        android:text="TextView"-->
+    <!--        android:textColor="#0D1333"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/leaf_image" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
